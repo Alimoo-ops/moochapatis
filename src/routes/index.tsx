@@ -39,7 +39,8 @@ import {
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 
-import heroImg from "@/assets/moo-hero.png";
+import heroImg from "@/assets/moo-hero.webp";
+import thumbImg from "@/assets/moo-thumb.webp";
 import { sendOrderToTelegram } from "@/lib/telegram.functions";
 
 export const Route = createFileRoute("/")({
@@ -301,7 +302,7 @@ function HomePage() {
                 className="group relative overflow-hidden rounded-2xl border bg-card p-3 text-left shadow-card transition-all hover:-translate-y-1 hover:shadow-glow"
               >
                 <div className="relative mb-3 overflow-hidden rounded-xl bg-secondary/60 aspect-square">
-                  <img src={heroImg} alt={p.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  <img src={thumbImg} alt={p.name} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <span className="absolute left-2 top-2 rounded-full bg-primary px-2 py-0.5 text-[10px] font-bold text-primary-foreground shadow-soft">
                     {p.tag}
                   </span>
