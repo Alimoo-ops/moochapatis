@@ -12,4 +12,8 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  // On Lovable's sandbox the preset forces the Cloudflare target (Lovable
+  // preview/publish keeps working). On Vercel's build (no sandbox) this
+  // explicit nitro option kicks in and produces a Vercel-compatible output.
+  nitro: { preset: "vercel" },
 });
