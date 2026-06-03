@@ -39,7 +39,8 @@ import {
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 
-import heroImg from "@/assets/moo-hero.png";
+import heroImg from "@/assets/moo-hero.webp";
+import thumbImg from "@/assets/moo-thumb.webp";
 import { sendOrderToTelegram } from "@/lib/telegram.functions";
 
 export const Route = createFileRoute("/")({
