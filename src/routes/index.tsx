@@ -51,7 +51,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Order fresh hot chapatis in Kitengela. Open 24 hours. Bonus on first 5+ orders. WhatsApp 0718357737.",
+          "Order fresh hot chapatis in Kitengela. Open 8pm till late. Bonus on first 5+ orders. WhatsApp 0718357737.",
       },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -231,7 +231,7 @@ function HomePage() {
             <div className="grid items-center gap-6 sm:grid-cols-2">
               <div className="text-primary-foreground animate-fade-up">
                 <Badge className="mb-3 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur hover:bg-white/30">
-                  <Sparkles className="mr-1 h-3 w-3" /> Kitengela • Open 24 Hours
+                  <Sparkles className="mr-1 h-3 w-3" /> Kitengela • 8pm till late
                 </Badge>
                 <h1 className="text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl">
                   Fresh Hot Chapatis<br />Delivered Fast.
@@ -271,7 +271,7 @@ function HomePage() {
         <section className="mx-auto -mt-5 max-w-6xl px-4">
           <div className="grid grid-cols-3 gap-2 rounded-2xl border bg-card p-2 shadow-card sm:gap-3 sm:p-4">
             {[
-              { icon: Clock, label: "Open 24 Hours" },
+              { icon: Clock, label: "8pm till late" },
               { icon: Truck, label: "Free over 10" },
               { icon: MapPin, label: "All Kitengela" },
             ].map((it, i) => (
@@ -393,7 +393,7 @@ function HomePage() {
               <Clock className="h-5 w-5 text-primary" />
               <div>
                 <div className="text-[11px] text-muted-foreground">Open</div>
-                <div className="text-sm font-bold">24 Hours</div>
+                <div className="text-sm font-bold">8pm till late</div>
               </div>
             </div>
           </div>
